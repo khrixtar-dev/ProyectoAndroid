@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -32,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             if (edUsername.text.toString() == defaultUsr &&
                 edPasswd.text.toString() == defaultPasswd){
                 val toast = Toast.makeText(this,"Ingresando . . .",Toast.LENGTH_SHORT).show()
-                val nuevaVentana = Intent(this, Ventana_2::class.java)
+                val nuevaVentana = Intent(this, MainActivity2::class.java)
 
                 startActivity(nuevaVentana)
             } else {

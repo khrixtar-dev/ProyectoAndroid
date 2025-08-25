@@ -16,7 +16,7 @@
             android:name=".MainActivity3"
             android:exported="false" />
         <activity
-            android:name=".Ventana_2"
+            android:name=".MainActivity2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

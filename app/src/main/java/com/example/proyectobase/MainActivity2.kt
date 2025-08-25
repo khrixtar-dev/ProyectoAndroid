@@ -9,11 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Ventana_2 : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_ventana2)
+        setContentView(R.layout.activity_main2)
 
 
         val mensajeBienvenida: TextView = findViewById(R.id.txBienvenido)
