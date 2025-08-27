@@ -22,30 +22,33 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.196" />
 
+
     <EditText
         android:id="@+id/edNumero2"
-        android:layout_width="259dp"
-        android:layout_height="41dp"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
         android:ems="10"
         android:hint="Ingrese el segundo numero "
         android:inputType="number"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <TextView
-        android:id="@+id/txTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="40dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="256dp" />
-
+        android:id="@+id/txResultado"
+        android:layout_width="119dp"
+        android:layout_height="63dp"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
 
     <Button
         android:id="@+id/btnCalcular"
@@ -57,7 +60,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467" />
+        app:layout_constraintVertical_bias="0.541" />
 
     <TextView
         android:id="@+id/txTituloCalculadora"
@@ -70,4 +73,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.11" />
+
+    <Spinner
+        android:id="@+id/spSeleccionarOperacion"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
