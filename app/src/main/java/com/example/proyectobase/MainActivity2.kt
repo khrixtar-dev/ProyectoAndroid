@@ -18,6 +18,7 @@ class MainActivity2 : AppCompatActivity() {
 
         val mensajeBienvenida: TextView = findViewById(R.id.txBienvenido)
         val btnToFormulario : Button = findViewById(R.id.btnToFormulario)
+        val btnToCalculadora : Button = findViewById(R.id.btnToCalculadora)
 
         mensajeBienvenida.text = "Para ingresar al formulario haga click en el boton de abajo"
 
@@ -26,7 +27,10 @@ class MainActivity2 : AppCompatActivity() {
 
             startActivity(nuevaVentana_2)
         }
-
+        btnToCalculadora.setOnClickListener{
+            val abrirCalculadora = Intent(this, MainActivity4::class.java)
+            startActivity(abrirCalculadora)
+        }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
