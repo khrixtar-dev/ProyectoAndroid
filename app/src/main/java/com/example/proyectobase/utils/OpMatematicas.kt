@@ -22,7 +22,7 @@ object OpMatematicas {
         } catch (e: ArithmeticException){
             return 0
         } finally {
-            println("Se ha producido un error aritmetico")
+            println("Se ha producido un error aritmetico se asigno 0 como resultado")
         }
 
     }

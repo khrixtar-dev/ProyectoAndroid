@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -46,22 +47,28 @@ class MainActivity4 : AppCompatActivity() {
             if (spSeleccionarOperacion.selectedItem == "Sumar"){
                 var resultadoOP : Int = OpMatematicas.sumar(calcN1,calcN2)
 
-                txResultado.text = resultadoOP.toString()
+                txResultado.text = "El resultado es: " + resultadoOP.toString()
             }
             else if (spSeleccionarOperacion.selectedItem == "Restar"){
                 var resultadoOP : Int = OpMatematicas.restar(calcN1,calcN2)
 
-                txResultado.text = resultadoOP.toString()
+                txResultado.text = "El resultado es: " + resultadoOP.toString()
             }
             else if (spSeleccionarOperacion.selectedItem == "Multiplicar"){
                 var resultadoOP : Int = OpMatematicas.multiplicar(calcN1,calcN2)
 
-                txResultado.text = resultadoOP.toString()
+                txResultado.text = "El resultado es: " + resultadoOP.toString()
             }
             else if (spSeleccionarOperacion.selectedItem == "Dividir" ){
-                var resultadoOP : Int = OpMatematicas.dividir(calcN1,calcN2)
 
-                txResultado.text = resultadoOP.toString()
+                var resultadoOP : Int = OpMatematicas.dividir(calcN1,calcN2)
+                if ( resultadoOP == 0){
+                    val toast = Toast.makeText(this,"No puedes dividir por 0",Toast.LENGTH_SHORT).show()
+                    txResultado.text = "Syntax Error"
+                } else {
+                    txResultado.text = "El resultado es: " + resultadoOP.toString()
+                }
+
             }
 
 

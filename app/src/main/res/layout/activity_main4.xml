@@ -40,15 +40,15 @@
 
     <TextView
         android:id="@+id/txResultado"
-        android:layout_width="119dp"
-        android:layout_height="63dp"
+        android:layout_width="215dp"
+        android:layout_height="91dp"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.459" />
 
     <Button
         android:id="@+id/btnCalcular"
@@ -60,14 +60,15 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintVertical_bias="0.612" />
 
     <TextView
         android:id="@+id/txTituloCalculadora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="247dp"
+        android:layout_height="41dp"
         android:text="CALCULADORA"
-        android:textSize="25dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,8 +77,8 @@
 
     <Spinner
         android:id="@+id/spSeleccionarOperacion"
-        android:layout_width="153dp"
-        android:layout_height="39dp"
+        android:layout_width="181dp"
+        android:layout_height="37dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
