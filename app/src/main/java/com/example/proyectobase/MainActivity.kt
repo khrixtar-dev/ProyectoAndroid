@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         val edUsername :EditText = findViewById(R.id.edUsername)
         val edPasswd : EditText = findViewById(R.id.edPasswd)
         val btnLogin : Button = findViewById(R.id.btnLogin)
+        val btnAtajo : Button = findViewById(R.id.btnAtajo)
 
 
         val defaultUsr = "correo"
@@ -38,7 +39,10 @@ class MainActivity : AppCompatActivity() {
                 val toast = Toast.makeText(this,"Usuario o contraseña incorrectos",Toast.LENGTH_SHORT).show()
             }
         }
-
+        btnAtajo.setOnClickListener {
+            val nuevaVentana2 = Intent(this,MainActivity5::class.java)
+            startActivity(nuevaVentana2)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
