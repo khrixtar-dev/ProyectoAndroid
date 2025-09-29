@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
-    <!-- AQUI VAN LOS PERMISOS PROPIOS-->
-
-    <!-- ESTE ES EL PERMISO PARA EL ACCESO A INTERNET-->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- ESTE ES EL PERMISO PARA EL ACCESO AL ESTADO DE LA CONEXION A INTERNET-->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
+    <!-- AQUI VAN LOS PERMISOS PROPIOS -->
+    <!-- ESTE ES EL PERMISO PARA EL ACCESO A INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- ESTE ES EL PERMISO PARA EL ACCESO AL ESTADO DE LA CONEXION A INTERNET -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoBase"
         tools:targetApi="31">
+        <activity
+            android:name=".MainActivity7"
+            android:exported="false" />
         <activity
             android:name=".MainActivity6"
             android:exported="false" />

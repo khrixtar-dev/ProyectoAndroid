@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val edPasswd : EditText = findViewById(R.id.edPasswd)
         val btnLogin : Button = findViewById(R.id.btnLogin)
         val btnAtajo : Button = findViewById(R.id.btnAtajo)
+        val btnAtajo2 : Button = findViewById(R.id.btnAtajo2)
 
         val defaultUsr = "correo"
         val defaultPasswd = "clave"
@@ -42,6 +43,10 @@ class MainActivity : AppCompatActivity() {
         btnAtajo.setOnClickListener{
             val nuevaVentana2 = Intent(this, MainActivity6::class.java)
             startActivity((nuevaVentana2))
+        }
+        btnAtajo2.setOnClickListener{
+            val nuevaVentana3 = Intent(this, MainActivity7::class.java)
+            startActivity((nuevaVentana3))
         }
 
 

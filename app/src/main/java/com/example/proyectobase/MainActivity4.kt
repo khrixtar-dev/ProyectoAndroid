@@ -38,7 +38,7 @@ class MainActivity4 : AppCompatActivity() {
             menuOperaciones
         )
 
-        spSeleccionarOperacion.adapter =  adapter
+
 
         btnCalcular.setOnClickListener {
             var calcN1 : Int = edNumero1.text.toString().toIntOrNull()?:0

@@ -1,7 +1,6 @@
 package com.example.proyectobase
 
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
 import android.widget.TextView
@@ -24,6 +23,14 @@ class MainActivity6 : AppCompatActivity() {
         val btnConfirmar : Button = findViewById(R.id.btnConfirmar)
 
         CargarRegionComunaAPI.CargarRegionComunaAPI(this, spRegion)
+
+        val regionSeleccionada: String = spRegion.selectedItem?.toString() ?: "Sin selección"
+
+
+
+        CargarRegionComunaAPI.cargarRegionComuna2(this, spComuna, regionSeleccionada)
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
